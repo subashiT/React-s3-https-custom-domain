@@ -39,8 +39,20 @@ Proof #1 - Static Hosting Setup
 Proof #2 - React Application View
 ![Alt Text](./screenshots/Public%20React%20application%20Working.png)
 
-### Enable HTTPS and Custom Domain
-Once the GitHub Student Pack is verified, a free domain will be obtained and will be completed this step.
+### Enable HTTPS and Custom Domain (Completed)
+
+1. **Registered free domain** via GitHub Student Pack: `reactrocket.codes`
+2. **Requested SSL certificate** in AWS ACM (us-east-1 region)  
+3. **Created CloudFront distribution**  
+   - Origin: S3 static website endpoint  
+   - Alternate domain: `reactrocket.codes`, `www.reactrocket.codes`  
+   - SSL: ACM certificate  
+   - Redirect HTTP → HTTPS  
+4. **Updated DNS** (at domain registrar):  
+   - `A` record → CloudFront distribution domain  
+   - `CNAME` for `www` → CloudFront  
+
+**Live HTTPS URL**: [https://yourdomain.com](https://reactrocket.codes)
 
 
 

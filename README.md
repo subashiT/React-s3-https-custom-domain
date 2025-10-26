@@ -1,4 +1,4 @@
-# Task 1 – Host a React Application on Amazon S3 with HTTPS and Custom Domain
+# Host a React Application on Amazon S3 with HTTPS and Custom Domain
 
 ### Objective
 Host a simple React web application using **Amazon S3** static-website hosting, attach a **custom domain**, and enable **HTTPS** access.
